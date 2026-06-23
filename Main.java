@@ -1,30 +1,46 @@
 public class Main {
-    public static void main(String[] args) {
 
-        Integer[] numeros = {1,2,2,4,2};
+    public static void main(String[] args){
 
-        System.out.println(
-            "Quantidade de vezes que o dois aparece: " +
-            ArrayUtil.count(numeros, 2)
-        );
+        Lista<String> lista=
+                new ListaEncadeada<>();
 
-        String[] nomes = {
-            "Ana",
-            "Pedro",
-            "Ana"
-        };
+        lista.add("Zeca");
+        lista.add("Maria");
+        lista.add("Ana");
+        lista.add("Pedro");
+        lista.add("Ana");
 
-        String[] materiais = {
-            "cadernos",
-            "lapis",
-            "cadernos",
-            "adernos",
-            "Borracha"
-        };
+        lista.remove("Maria");
 
         System.out.println(
-            "Quantidade de Ana: " + ArrayUtil.count(nomes, "Ana") +
-            " | Quantidade de lapis: " + ArrayUtil.count(materiais, "lapis")
+                "Quantidade Ana: "+
+                ListaUtil.count(
+                        lista,
+                        "Ana"
+                )
         );
+
+        System.out.println(
+                "Maior: "+
+                ListaUtil.max(lista)
+        );
+
+        System.out.println(
+                "Menor: "+
+                ListaUtil.min(lista)
+        );
+
+        System.out.println("\nElementos:");
+
+        for(int i=0;i<lista.size();i++){
+
+            System.out.println(
+                    lista.get(i)
+            );
+
+        }
+
     }
+
 }
