@@ -8,8 +8,9 @@ public class Main {
         lista.add("Zeca");
         lista.add("Maria");
         lista.add("Ana");
-        lista.add("Pedro");
+        lista.add("Pedro"); 
         lista.add("Ana");
+        lista.add("Adalberto");
 
         lista.remove("Maria");
 
