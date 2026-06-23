@@ -12,9 +12,23 @@ public class Main {
                 "Ana"
         };
 
-        System.out.println(
+         System.out.println(
                   "Quantidade: "+
                   ArrayUtil.count(nomes,"Ana")
         );
+
+        String[] materiais = {
+                "cadernos",
+                "lapis",
+                "Cadernos",
+                "Cadernos",
+                "Borracha"
+        };
+
+         System.out.println(
+                  "Quantidade: "+
+                  ArrayUtil.count(materiais,"cadernos")
+        );
+
     }
 }
